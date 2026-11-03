@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Como o Albuns NAS acessa, utiliza e armazena dados do Immich e do Google Fotos na integração pessoal pelo NAS.">
+  <meta name="referrer" content="no-referrer">
+  <title>Política de Privacidade — Albuns NAS</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="top"><div class="wrap"><a class="brand" href="index.html">Albuns NAS</a><nav aria-label="Navegação principal"><a href="index.html">Apresentação</a><a href="privacidade.html" aria-current="page">Privacidade</a><a href="termos.html">Termos de uso</a></nav></div></header>
+<main id="conteudo" class="wrap legal">
+  <p class="eyebrow">Albuns NAS</p><h1>Política de Privacidade</h1><p class="updated">Última atualização: 2 de novembro de 2026.</p>
+  <p>O Albuns NAS é uma integração pessoal que copia álbuns escolhidos do Immich para a conta Google Fotos do proprietário da instalação. Esta política descreve o tratamento de dados pela integração. O contato responsável por esta instalação é <a class="contact" href="mailto:lamparejo@outlook.com">lamparejo@outlook.com</a>.</p>
+  <h2>1. Quais dados são acessados</h2>
+  <p>Do Immich, a integração lê os álbuns da conta configurada, seus nomes e identificadores, os metadados necessários à transferência e os arquivos originais selecionados. Esses metadados podem incluir nome do arquivo, tipo, tamanho, data e checksum. Metadados embutidos nos originais, como data e localização, acompanham os arquivos quando já estão presentes neles.</p>
+  <p>Do Google, a integração recebe o identificador da conta e seu e-mail para confirmar o destinatário. Ela também acessa identificadores, links e informações dos álbuns e itens criados pelo próprio app, para acompanhar e conferir as transferências. Não solicita acesso de leitura a toda a biblioteca Google Fotos preexistente.</p>
+  <h2>2. Permissões e finalidade</h2>
+  <p>A autorização OAuth permite adicionar fotos, vídeos e álbuns ao Google Fotos e consultar somente o conteúdo criado pelo mesmo app. As permissões de identificação da conta permitem conferir a conta conectada. No Immich, a chave dedicada possui permissões de leitura dos álbuns, metadados, originais e usuário.</p>
+  <p>Esses dados são usados para executar o envio solicitado, confirmar a identidade das contas, validar os arquivos, acompanhar o progresso, retomar trabalhos e conferir os itens no destino. Os comprovantes locais permitem reaproveitar itens já enviados por esta integração. O app não solicita permissão de exclusão no Google Fotos ou no Immich.</p>
+  <h2>3. Onde os dados ficam</h2>
+  <p>A transferência é executada no NAS do proprietário. Tokens OAuth, chave Immich, fila, metadados e comprovantes ficam em diretório privado da instalação. Originais são baixados para um cache local durante o envio. A configuração inicial ou uma reconexão também pode manter uma cópia das credenciais em diretório privado do computador do operador.</p>
+  <p>As chamadas ao Google usam HTTPS. As cópias enviadas ficam na conta Google Fotos autorizada, sujeitas às configurações, ao armazenamento e às políticas do Google. As credenciais não são incluídas no código público destas páginas nem nos argumentos da ferramenta oferecida ao assistente.</p>
+  <h2>4. Telegram, assistente e terceiros</h2>
+  <p>Comandos e respostas do bot passam pelo Telegram e pelo assistente Hermes configurado no NAS. Nomes de álbuns, identificadores, contagens, mensagens de progresso e links de resultado podem fazer parte dessa conversa e ser processados pelo provedor do modelo configurado pelo proprietário.</p>
+  <p>A transferência dos arquivos é feita por um worker determinístico. A integração não envia o conteúdo dos originais ou as credenciais OAuth ao modelo para analisar fotos. Não vende dados e não usa o conteúdo recebido das APIs Google para publicidade ou treinamento de modelos de inteligência artificial. O uso de dados recebidos das APIs Google deve observar a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado.</p>
+  <p>O Google, o Telegram, o provedor do modelo e a infraestrutura de hospedagem destas páginas possuem seus próprios termos e políticas. A integração não publica nem compartilha os álbuns Google com terceiros por conta própria.</p>
+  <h2>5. Retenção e controle</h2>
+  <p>Credenciais e comprovantes permanecem na instalação até que o operador os remova ou substitua. O cache de transferência pode reter um original ou arquivo parcial e é reutilizado nos próximos envios. A biblioteca de origem e as cópias já enviadas ao Google continuam sob controle do titular; desconectar o app não apaga esses arquivos.</p>
+  <p>O titular pode interromper novos pedidos, revogar o acesso do Albuns NAS na <a href="https://myaccount.google.com/permissions">área de conexões da Conta Google</a> e revogar a chave dedicada no Immich. Para remover o estado privado da integração ou solicitar informações sobre esta instalação, entre em contato pelo e-mail acima. Revogar o acesso não remove as cópias que já foram enviadas ao Google Fotos.</p>
+  <h2>6. Estas páginas informativas</h2>
+  <p>Estas páginas não possuem formulários de login, anúncios, scripts de análise de audiência ou cookies próprios. O serviço que hospeda as páginas pode registrar dados técnicos das requisições, como endereço IP, data e informações do navegador, conforme suas políticas. Não é necessário fornecer fotos ou credenciais para ler estas páginas.</p>
+  <h2>7. Atualizações</h2>
+  <p>Esta política poderá ser atualizada para refletir mudanças na integração ou nas práticas descritas. A data da versão aparece no início da página. Mudanças na autorização Google dependem de novo consentimento quando exigido pelo Google.</p>
+  <p class="section"><a href="index.html">Voltar à apresentação</a> · <a href="termos.html">Ler os Termos de Uso</a></p>
+</main>
+<footer class="footer"><div class="wrap"><p>Albuns NAS · Uso pessoal</p><nav aria-label="Informações legais"><a href="privacidade.html" aria-current="page">Privacidade</a><a href="termos.html">Termos de uso</a></nav></div></footer>
+</body></html>
